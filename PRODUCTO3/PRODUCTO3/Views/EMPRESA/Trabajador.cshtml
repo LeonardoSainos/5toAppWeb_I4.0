@@ -1,0 +1,63 @@
+﻿@model IEnumerable<PRODUCTO3.Models.Trabajador>
+
+@{
+    ViewBag.Title = "Trabajador";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Trabajador</h2>
+
+<p>
+    @Html.ActionLink("Agregar nuevo trabajador ", "Login")
+
+</p>
+<br />
+<br />
+<br />
+<br />
+<p>
+    @Html.ActionLink("Ir a la lista de asistencias ", "Asiste")
+</p>
+<br />
+<br />
+<br />
+<br />
+<p>
+    @Html.ActionLink("Ir a la sección de roles", "Index")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidos)
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.nombre)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.apellidos)
+    </td>
+
+    <td>
+        @Html.ActionLink("Actualizar", "Modificar_Trabajador", new { id = item.id }) |
+        @Html.ActionLink("Detalles", "DetallesTrabajador", new { id = item.id }) |
+        @Html.ActionLink("Dar de baja", "DarBaja", new { id = item.id })
+    </td>
+</tr>
+}
+
+</table>

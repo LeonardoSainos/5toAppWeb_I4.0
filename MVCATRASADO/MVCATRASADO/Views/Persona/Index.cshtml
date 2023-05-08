@@ -1,0 +1,79 @@
+﻿@model IEnumerable<MVCATRASADO.Models.Persona>
+
+@{
+    ViewBag.Title = "Index";
+}
+<link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="~/Content/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<h2>Inicio</h2>
+<div class="alinear">
+    <button class=" btn btn-success ">
+        <h4>
+            @Html.ActionLink("Crear nuevo ", "Agregar_Persona")
+        </h4>
+    </button>
+</div>
+ 
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<style>
+    .alinear {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+          color:aliceblue;
+
+    }
+    .letra{
+ 
+    }
+    .ttt{
+        color:white;
+        border:solid 1px;
+        background-color:black;
+    }
+</style>
+
+
+<table class="table table-bordered ttt">
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Modificar_Persona", new { id = item.id }) |
+                @Html.ActionLink("Detalles", "DetallesPersona", new { id = item.id }) |
+                @Html.ActionLink("Eliminar", "EliminarPersona", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,51 @@
+﻿@model NOOO.Models.Repositorio
+
+@{
+    ViewBag.Title = "Mostrar_datos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.ActionLink("Crear Persona", "Agregar_registro")
+
+<h2>Mostrar_datos</h2>
+<!DOCTYPE html>
+<html5>
+    <header>
+        <link href="~/bootstrap.min.css" rel="stylesheet" />
+
+    </header>
+    <body>
+        <div class="table-responsive ">
+            <table class="table table-striped table-bordered  table-hover table-condensed ">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>nombre</th>
+                        <th>Operaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (System.Data.DataRow dr in ViewBag.per.Rows)
+                        {
+                            <tr>
+                                <td>@dr["id"]</td>
+                                <td>@dr["nombre"]</td>
+                                <td>
+                                    @Html.ActionLink("Actualizar", "Actualizar", new { id = @dr["id"] })
+                                    @Html.ActionLink("Eliminar", "Eliminar_registro", new { id = @dr["id"] })
+                                    <a href="/Persona/Actualizar_registro?id=@dr["id"]">Actualizar</a>
+                                    <a href="/Persona/Eliminar_registro?id=@dr["id"]">Eliminar</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html5>
+
+<div>
+    @Html.ActionLink("Regresar", "Index");
+</div>

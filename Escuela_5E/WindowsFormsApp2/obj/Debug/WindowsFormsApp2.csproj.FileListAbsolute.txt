@@ -1,0 +1,23 @@
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\MemoriaMorada_2020\Enero_Abril_2021\AplicacionesWebParaI4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.manifest
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.application
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe.manifest
+C:\Users\52222\OneDrive\Escritorio\TICS\5to\APLICACIONES WEB PARA I 4.0\Escuela_5E\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.application

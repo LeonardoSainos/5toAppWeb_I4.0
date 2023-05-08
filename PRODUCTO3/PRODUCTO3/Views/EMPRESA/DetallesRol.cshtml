@@ -1,0 +1,35 @@
+﻿@model PRODUCTO3.Models.Rol
+
+@{
+    ViewBag.Title = "DetallesRol";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles Rol</h2>
+
+<div>
+    <h4>Rol</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+  
+    @Html.ActionLink("Regresar", "Index")
+</p>

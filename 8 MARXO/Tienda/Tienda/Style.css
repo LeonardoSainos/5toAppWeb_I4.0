@@ -1,0 +1,320 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 1071px;
+    width: 6947px;
+}
+
+section {
+    background-image: url("Images/edificios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+img {    margin-right: 79px;
+    margin-top: 36px;
+}
+
+.container {
+    width: 100vw;
+    height: 953px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    margin-top: 22vh;
+    width: 28vw;
+    height: 887px;
+    text-align: center;
+    background-color: rgba(251, 251, 251, 0.41)
+}
+
+#Label1 {
+    font-size: 3vw;
+    font-family: 'Anton', sans-serif;
+    color: coral;
+    border-bottom: 2px solid black;
+    padding: 0% 5% 0% 5%;
+}
+
+.lblstyle {
+    font-size: 2vw;
+    font-family: 'Righteous', cursive;
+    color: rebeccapurple;
+}
+
+.txtstyle {
+    font-size: 2vw;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    font-family: 'Passion One', cursive;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: 0px;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: 0px;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: 0px;
+}
+
+#btnregistrar {
+    width: 20vw;
+    height: 8vh;
+    border: 0px;
+    background-color: transparent;
+    font-size: 3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color: rgba(245, 241, 241, 0.64);
+    color: dodgerblue;
+    border-radius: 15%;
+}
+#Btniniciarseccion {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    width: 20vw;
+    background-color: transparent;
+    font-size: 3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color: rgba(245, 241, 241, 0.64);
+    color: dodgerblue;
+    border-radius: 15%;
+}
+.textbox {
+    font-size: 2vw;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    font-family: 'Passion One', cursive;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: 0px;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: 0px;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: 0px;
+    margin-bottom: 12px;
+}
+.buttons {
+    border-bottom: medium none transparent;
+    background: #3a7999;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    top: 28px;
+    left: 859px;
+    height: 98px;
+    width: 916px;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+    font-size: 2vw;
+
+}
+.mGrid {
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Righteous', cursive;
+    color: rebeccapurple;
+}
+
+    .mGrid td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #424242 url(grd_head.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #424242 url(grd_pgr.png) repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+.file-upload {
+    display: inline-block;
+    overflow: hidden;
+    ;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    border: 1px solid #124d77;
+    background: #007dc1;
+    color: #fff;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    cursor: pointer;
+    text-shadow: #000 1px 1px 2px;
+    -webkit-border-radius: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+    .file-upload:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+        background: -moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background: -webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background: -o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background: -ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+        background-color: #0061a7;
+    }
+
+/* The button size */
+.addkey_btn {
+    background-color: transparent;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    font-size: 3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color: rgba(245, 241, 241, 0.64);
+    color: dodgerblue;
+    padding: 3px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.question {
+    text-align: center;
+    color: red;
+    background-image: url("Images/arbolito.jpg");
+}
+.table {
+    max-width: none;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 3px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+         
+}
+
+.table {
+    margin-bottom: 20px;
+    font-size: 2vw;
+    font-family: 'Righteous', cursive;
+    color: rebeccapurple;
+    margin-left: 0px;
+}
+
+    .table th, .table td {
+        width: auto;
+        height: auto;
+        padding: 8px;
+        line-height: 20px;
+        text-align: left;
+        vertical-align: top;
+        border-top: 1px solid #dddddd;
+    }
+
+    .table th {
+        width: auto;
+        height: auto;
+        font-weight: bold;
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+    }
+
+.row {
+    text-align: center;
+    color: red;
+    text-align: center;
+}
+.catalogo {
+  
+    background-color: transparent;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    font-size: 3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color: rgba(245, 241, 241, 0.64);
+    margin-left: auto;
+    text-align: center;
+}
+
+.img-responsive {
+
+    color: dodgerblue;
+    border-radius: 8%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:auto;
+  
+    text-align: center;
+ 
+}
+}

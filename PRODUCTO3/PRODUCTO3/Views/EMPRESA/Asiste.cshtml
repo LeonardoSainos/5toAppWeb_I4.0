@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PRODUCTO3.Models.Asiste>
+
+@{
+    ViewBag.Title = "Asiste";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Asiste</h2>
+
+<p>
+    @Html.ActionLink("Asignar nuevo registro de asistencia ", "Dar_Asistencia")
+</p>
+
+
+<br />
+<br />
+<br />
+<br />
+<p>
+    @Html.ActionLink("Ver trabajadores ", "Trabajador")
+</p>
+<br />
+<br />
+<br />
+<br />
+<p>
+    @Html.ActionLink("Ir a la sección de roles", "Index")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.idTrabajador)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.idTrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Modificar_Asistencia", new { id = item.idAsistencia }) |
+                @Html.ActionLink("Detalles", "DetallesAsiste", new { id = item.idAsistencia }) |
+                @Html.ActionLink("Borrar", "BorrarAsistencia", new { id = item.idAsistencia })
+            </td>
+        </tr>
+    }
+
+</table>

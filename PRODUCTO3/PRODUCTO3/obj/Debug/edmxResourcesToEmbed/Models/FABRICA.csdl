@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMPRESAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Asiste">
+    <Key>
+      <PropertyRef Name="idAsistencia" />
+    </Key>
+    <Property Name="idAsistencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <Property Name="valor" Type="Int32" />
+    <Property Name="idTrabajador" Type="Int32" />
+    <NavigationProperty Name="Trabajador" Relationship="Self.fk_prueba" FromRole="Asiste" ToRole="Trabajador" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="idrol" />
+    </Key>
+    <Property Name="idrol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="estatus" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Trabajador" Relationship="Self.FK_ROL" FromRole="Rol" ToRole="Trabajador" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Trabajador">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="apellidos" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="idroles" Type="Int32" />
+    <Property Name="salario" Type="Double" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <Property Name="Relleno" Type="Int32" />
+    <NavigationProperty Name="Asiste" Relationship="Self.fk_prueba" FromRole="Trabajador" ToRole="Asiste" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_ROL" FromRole="Trabajador" ToRole="Rol" />
+  </EntityType>
+  <Association Name="fk_prueba">
+    <End Role="Trabajador" Type="Self.Trabajador" Multiplicity="0..1" />
+    <End Role="Asiste" Type="Self.Asiste" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trabajador">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Asiste">
+        <PropertyRef Name="idTrabajador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROL">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Trabajador" Type="Self.Trabajador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idrol" />
+      </Principal>
+      <Dependent Role="Trabajador">
+        <PropertyRef Name="idroles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EMPRESAEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Asiste" EntityType="Self.Asiste" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Trabajador" EntityType="Self.Trabajador" />
+    <AssociationSet Name="fk_prueba" Association="Self.fk_prueba">
+      <End Role="Trabajador" EntitySet="Trabajador" />
+      <End Role="Asiste" EntitySet="Asiste" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROL" Association="Self.FK_ROL">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Trabajador" EntitySet="Trabajador" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

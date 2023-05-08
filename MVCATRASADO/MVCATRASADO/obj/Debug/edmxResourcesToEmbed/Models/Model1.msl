@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CLASE24ModelStoreContainer" CdmEntityContainer="CLASE24Entities">
+    <EntitySetMapping Name="Persona">
+      <EntityTypeMapping TypeName="CLASE24Model.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AgregarPersona" FunctionName="CLASE24Model.Store.AgregarPersona" />
+  </EntityContainerMapping>
+</Mapping>

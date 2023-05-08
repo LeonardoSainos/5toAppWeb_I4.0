@@ -1,0 +1,17 @@
+Create Procedure CalcularPorMateriaIndividual
+@clave_alumno int,
+ @clave_materia int OUTPUT
+AS
+declare @promedio float
+declare @calificacion float
+ declare @cantidad float 
+set @calificacion =(select sum(promedio) from toma WHERE clave_alumnoT=@clave_alumno and clave_materiaT=@clave_materia )
+set @cantidad= (SELECT count(promedio)  from toma WHERE clave_alumnoT=@clave_alumno and clave_materiaT=@clave_materia )
+set @promedio=(@calificacion/ @cantidad);
+print @promedio;
+return @PROMEDIO;
+
+ Exec CalcularPorMateriaIndividual 3,7
+select * from toma 
+Exec CalcularPorMateria 2
+select * from toma where clave_alumnoT=3

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mi_aplicacion_con_aspet", "Mi_aplicacion_con_aspet\Mi_aplicacion_con_aspet.csproj", "{61C6BE78-E8EB-4E79-9C27-03796DBE056B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61C6BE78-E8EB-4E79-9C27-03796DBE056B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C6BE78-E8EB-4E79-9C27-03796DBE056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C6BE78-E8EB-4E79-9C27-03796DBE056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C6BE78-E8EB-4E79-9C27-03796DBE056B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B07542E0-4E00-4EFF-975D-A7579A363ABB}
+	EndGlobalSection
+EndGlobal

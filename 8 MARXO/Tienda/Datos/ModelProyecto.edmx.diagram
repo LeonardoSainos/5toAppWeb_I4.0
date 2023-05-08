@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6606a82e2b8c450e90e8904af4246968" Name="Diagram1">
+        <EntityTypeShape EntityType="tienda_definiitivaModel.Categoria" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tienda_definiitivaModel.Permiso" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tienda_definiitivaModel.Productos" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tienda_definiitivaModel.Rol" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tienda_definiitivaModel.Tarjeta" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="tienda_definiitivaModel.Usuario" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="tienda_definiitivaModel.FK_clav_categorias" ManuallyRouted="false" />
+        <AssociationConnector Association="tienda_definiitivaModel.FK_clav_permiso" ManuallyRouted="false" />
+        <AssociationConnector Association="tienda_definiitivaModel.FK_clav_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="tienda_definiitivaModel.FK_clav_rol" ManuallyRouted="false" />
+        <AssociationConnector Association="tienda_definiitivaModel.FK_clav_usu" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

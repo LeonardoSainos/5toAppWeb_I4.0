@@ -1,0 +1,82 @@
+﻿@model PRODUCTO3.Models.Trabajador
+
+@{
+    ViewBag.Title = "DarBaja";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DarBaja</h2>
+
+<h3>¿Seguro que quieres dar de baja a este empleado?</h3>
+<div>
+    <h4>Trabajador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.idroles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idroles)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Dar de baja" class="btn btn-warning" /> |
+            @Html.ActionLink("Regresar", "Trabajador")
+        </div>
+    }
+</div>

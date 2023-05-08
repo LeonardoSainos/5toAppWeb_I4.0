@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PRODUCTO3.Models.Rol>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo Rol", "Agregar_Rol")
+</p>
+
+<br />
+<br />
+<br />
+<br />
+<p>
+    @Html.ActionLink("Ir a la lista de asistencias ", "Asiste")
+</p>
+<br />
+<br />
+<br />
+<br />
+<p>
+    @Html.ActionLink("Ver trabajadores", "Trabajador")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estatus)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estatus)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Modificar_Rol", new { id = item.idrol }) |
+                @Html.ActionLink("Details", "DetallesRol", new { id = item.idrol }) |
+                @Html.ActionLink("Delete", "Eliminar_Rol", new { id = item.idrol })
+            </td>
+        </tr>
+    }
+
+</table>
